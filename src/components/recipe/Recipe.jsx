@@ -1,13 +1,17 @@
 import React from 'react'
 import styles from './recipe.module.css'
-const Recipe = ({ image, buttonText, buttonSubText, buttonColor }) => {
+import { Link } from 'react-router-dom'
+const Recipe = ({ id, image, buttonText, buttonSubText, buttonColor }) => {
     return (
         <div className={styles.recipeContainer}>
             <img className={styles.recipeImage} src={image} alt={buttonText} />
-            <a className={`${styles.button} ${buttonColor == 'red' && styles.redButton} 
+
+            <Link
+                to={`/recipes/${id}`}
+                className={`${styles.button} ${buttonColor == 'red' && styles.redButton} 
             ${buttonColor == 'blue' && styles.blueButton}`}  >{buttonText}<br />
                 <div className={styles.buttonSecondaryText}>{buttonSubText}</div>
-            </a>
+            </Link>
         </div>
     )
 }

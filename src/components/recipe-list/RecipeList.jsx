@@ -23,6 +23,7 @@ const RecipeList = () => {
             {
                 recipes.map(r => <Recipe
                     key={r.id}
+                    id={r.id}
                     image={r.image}
                     buttonText={r.name}
                     buttonSubText={r.subText}

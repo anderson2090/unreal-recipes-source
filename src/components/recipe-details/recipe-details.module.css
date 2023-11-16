@@ -1,0 +1,62 @@
+.recipeDetailImage {
+    width: 500px;
+    height: 400px;
+    margin: 5px;
+}
+
+.recipe-contents-container {
+    line-height: 150%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients-container {
+    padding: 10px;
+    border-left: black double;
+}
+
+.steps-container {
+    padding: 5px;
+    line-height: 150%;
+}
+
+h1 {
+
+    margin: 5px;
+    font-family: Chewy, Arial, sans-serif;
+    font-size: 36px;
+    color: #2c0768;
+
+}
+
+h2 {
+    font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+h3 {
+    font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+li {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.ingredientsContainer {
+    padding: 10px;
+    border-left: black double;
+}
+
+.stepsContainer {
+    padding: 5px;
+    line-height: 150%;
+}

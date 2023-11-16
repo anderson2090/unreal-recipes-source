@@ -1,13 +1,16 @@
 import React from 'react'
-import styles from './app.module.css'
-import Heading from './components/heading/Heading'
-import RecipeList from './components/recipe-list/RecipeList'
+import RecipeApp from './components/RecipeApp/RecipeApp'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import RecipeDetailRapper from './components/recipe-details/RecipeDetailRapper'
 const App = () => {
   return (
-    <>
-      <Heading />
-      <RecipeList />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<RecipeApp />} />
+        <Route path='/recipes/:id' element={<RecipeDetailRapper />} />
+      </Routes>
+
+    </BrowserRouter>
   )
 }
 

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import DragonSteak from '../../images/dragon-steak.jpg'
 import DragonSteak2 from '../../images/dragon-steak2.jpg'
 import RecipeDetails from './RecipeDetails'
+import NotFound from '../not-found/NotFound'
 
 const data = {
     1: {
@@ -40,11 +41,16 @@ const data = {
     },
 }
 
+const dataKeys = Object.keys(data)
+const dataLength = dataKeys.length
 
 const RecipeDetailRapper = () => {
     const { id } = useParams()
     return (
-        <RecipeDetails data={data[id]} />
+        <>
+            {id > dataLength ? <NotFound /> : <RecipeDetails data={data[id]} />}
+
+        </>
     )
 }
 

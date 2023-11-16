@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom'
 const RecipeDetails = ({ data }) => {
     return (
         <>
-            <Link to={'/'}>
-                <Heading />
-            </Link>
+            <Heading/>
             {data.images.map(i => <img className={styles.recipeDetailImage} src={i} />)}
             <h1>{data.name}</h1>
             <h2>Description</h2>

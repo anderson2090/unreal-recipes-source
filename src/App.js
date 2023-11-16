@@ -7,7 +7,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<RecipeApp />} />
+        <Route path='/unreal-recipes' element={<RecipeApp />} />
         <Route path='/recipes/:id' element={<RecipeDetailRapper />} />
         <Route path='*' element={<NotFound />} />
       </Routes>

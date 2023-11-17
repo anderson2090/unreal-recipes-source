@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Heading = () => {
     return (
         <>
-            <Link to={'/'}>
+            <Link to={'/unreal-recipes'}>
                 <img className={styles.headingImage} src={headingImage} alt="Heading Image" />
             </Link>
         </>
